@@ -64,6 +64,15 @@
 	console.log(test());
 	function a (a) {console.log(a); return a;};
 	a(24);
+	var arrTest = [];
+	var arrTest2 = [[],{},"",24];
+	console.log(arrTest2);
+	// Classical, Pseudo-Classical, Functional...
+	// Functional Inheritance Pattern...
+	var tester = function (ops) {
+		console.log();
+		return;
+	};
 	// what makes this Node API serious IP Property???
 	// what's the algorithm for IP/NDA agreement proposals for other developers???
 	// API, SDK, APP, Network, Security,  
