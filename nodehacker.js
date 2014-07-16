@@ -7,7 +7,7 @@
 		propOne: "Property One...",
 		propTwo: {
 			innerPropOne: {
-
+				yo: "lo"
 			}
 		},
 		propThree: [{
@@ -70,9 +70,48 @@
 	// Classical, Pseudo-Classical, Functional...
 	// Functional Inheritance Pattern...
 	var tester = function (ops) {
-		console.log();
-		return;
+		console.log({
+			firstName: ops.nameFirst || 'John',
+			lastName: ops.nameLast || 'Doe',
+			email: ops.email || 'test@example.com',
+			name: function () {return this.firstName + this.lastName + this.email}
+		});
 	};
+	var user = {
+		nameFirst: "Ryan",
+		nameLast: "Poplin",
+		email: "mobileupstate@gmail.com"
+	};
+	tester(user);
+	var inc = function (ops) {
+		ops = ops || {};
+		var inc  = user(ops);
+		inc.customers = ops.customers || 0;
+		inc.isInc = true;
+		console.log(inc);
+	};
+	// IIFE Function === Immediatly-Invoked Function Expression...
+	/*(function () {
+		// window.customModule = {};
+		window.boo = function () {
+			var _a = 1;
+			var inc = function () {
+				_a++;
+				// log it and return it for testing...
+				console.log(_a);
+				return(_a);
+			};
+			return {
+				increment: inc
+			};
+		};
+	}());
+	var b = window.boo();
+	b.increment();*/
+	// b.increment();
+	// b.increment();
+	// b.increment();
+	// window is not defined in Node.js...
 	// what makes this Node API serious IP Property???
 	// what's the algorithm for IP/NDA agreement proposals for other developers???
 	// API, SDK, APP, Network, Security,  
