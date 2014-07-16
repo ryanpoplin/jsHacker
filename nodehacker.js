@@ -33,4 +33,7 @@
 	};
 	var holder = new obj();
 	console.log(holder);*/
+
+	
+	
 }());
