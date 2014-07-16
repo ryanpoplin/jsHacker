@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exceptional Applications</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>   
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+        <script src="nodehacker.js"></script>
+        <!--<script src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>-->
+        <!--<script>Parse.initialize("SooNnnrJHY0ODHJyUIujPJLwoNNRfgHPt7cFCN7R", "WC7gUdg113JYUZOW5eIvbi7yAiE66Jl579TZvOSJ");</script>-->
+        <style>
+            body {
+                background: #f8f8f8;
+            }
+            .grid-border {
+                padding: 25px 0 25px 0;
+                font-size: 25px;
+                border: 1px solid #e8e8e8;
+            }
+            .grid-border img {
+                display: block;
+                margin: 0 auto;
+            }
+            .glyphicons {
+                font-size: 3em;
+                color: #3a87ad;
+                display: block;
+                text-align: center;
+            }
+            .padding-header {
+                padding: 40px 0 40px 0;
+            }
+            .margin-footer {
+                margin: 40px 0 40px 0;
+            }
+            .logo-size {
+                height: 250px;
+                max-width: 250px;
+            }
+            .sign-up-msg {
+                padding-top: 25px;
+            }
+            .fonts {
+                font-family: 'Open Sans', sans-serif;
+            }
+            .inline {
+                display: inline-block;
+            }
+            .sentence {
+                position: relative;
+            }
+            .sentence-bar {
+                position:right;
+            }
+            .section {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">  
+            <div class="sentence-bar col-sm-12 grid-border">
+                <!-- CONFIG THE SENTENCE... -->
+                <img class="sentence-bar" src="img/speak.png" alt="speak">
+                <img class="sentence-bar" src="img/back.png" alt="back">
+            </div>
+            <!-- DOM SCRIPT IT... -->
+            <div class="col-sm-4 text-center grid-border">
+                <span>I</span>
+                <img src="img/i.png" alt="I">
+            </div>
+            <div class="col-sm-4 text-center grid-border">
+                <span>want</span>
+                <img src="img/want.png" alt="want">
+            </div>
+            <div class="col-sm-4 text-center grid-border">
+                <span>coffee</span>
+                <img src="img/coffee.png" alt="coffee">
+            </div>
+            <div class="col-sm-4 text-center grid-border">
+                <span>I</span>
+                <img src="img/i.png" alt="I">
+            </div>
+            <div class="col-sm-4 text-center grid-border">
+                <span>want</span>
+                <img src="img/want.png" alt="want">
+            </div>
+            <div class="col-sm-4 text-center grid-border">
+                <span>coffee</span>
+                <img src="img/coffee.png" alt="coffee">
+            </div>
+        </div>
+        <!--<script>
+            (function($) {
+                function parseSignUp() {
+                    var name, email, password, user;
+                    name = $('#name').val();
+                    email = $('#email').val();
+                    password = $('#password').val();
+                    user = new Parse.User();
+                    user.set("username", name);
+                    user.set("email", email);
+                    user.set("password", password);
+                    user.signUp(null, {
+                        success: function(user) {
+                            $('.sign-up-msg').text("You are signed up for ExcepApps' Newsletter!");
+                            setTimeout(function() {
+                                $('.close').click();
+                            }, 3000);
+                        },
+                        error: function(user, error) {
+                            $('.sign-up-msg').text(error.message);
+                        }
+                    });
+                }
+                $('#sign-up').click(function(){
+                    parseSignUp();
+                });
+            }(jQuery));
+        </script>-->
+    </body>
+</html>
