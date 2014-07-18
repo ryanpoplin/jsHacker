@@ -1,4 +1,4 @@
-// (function(){
+(function(){
 
 	const fs = require('fs'),
 	// arguement vector...
@@ -12,4 +12,4 @@
 	});
 	console.log("Now watching " + filename + " for changes...");
 
-// }());
+}());
