@@ -1,3 +1,4 @@
+"use strict";
 (function(){
 // an ECMAScript Harmony const holds a Node.js module called fs for file-system module...
 const fs = require('fs');
